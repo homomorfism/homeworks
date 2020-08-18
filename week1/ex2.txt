@@ -1,0 +1,75 @@
+    1  sudo apt-get update
+    2  sudo apt-get dist-upgrade
+    3  gcc
+    4  gcc /home/sh/helh_UI.cpp
+    5  gcc /home/sh/Documents/helh-UI.cpp
+    6  sudo apt-get install biuld-essential manpages-dev
+    7  sudo apt-get install build-essential manpages-dev
+    8  gcc --version
+    9  gcc /home/sh/Documents/helh-UI.cpp
+   10  vi /home/sh/Documents/helh-UI.cpp
+   11  gcc hello.cpp -o hello
+   12  sudo snap install pycharm-professional --classic
+   13  sudo snap install pycharm-community --classic
+   14  g++ -0 hello hello.cpp
+   15  g++ -o hello hello.cpp
+   16  ./hello
+   17  python
+   18  sudo apt-get install python3
+   19  python
+   20  python3
+   21  ls
+   22  cd Desktop
+   23  ls
+   24  mkdir Shamil
+   25  cd Shamil
+   26  pwd
+   27  ls
+   28  cd Desktop/Shamil
+   29  ls
+   30  cat > hello.cpp
+   31  g++ -o hello hello.cpp
+   32  hello
+   33  ./hello
+   34  mkdir hello_progect
+   35  cp hello.cpp hello_progect
+   36  sudo apt-get install git
+   37  git init
+   38  exit
+   39  g++ hello hello.cpp
+   40  g++ hello.cpp hello
+   41  ls
+   42  g++ -o hello hello.cpp
+   43  g++ -o hello hello.cpp
+   44  ./hello
+   45  g++ -o stu stu.cpp
+   46  ./stu
+   47  exit
+   48  settings
+   49  setting
+   50  ls
+   51  cd Desktop
+   52  torch a.txt
+   53  cat a.txt
+   54  echo -n sh.txt
+   55  echo -n > sh.txt
+   56  mkdir week1
+   57  cd week1
+   58  touch files.txt
+   59  ls -r > files.txt
+   60  ls > file.txt
+   61  grep "gcc" | sort -r > file.txt
+   62  grep "gcc" /usr/bin | sort -r > file.txt
+   63  ls /usr/bin | grep "gcc"
+   64  ls /usr/bin | grep "gcc" | sort -r > file.txt
+   65  ls /usr/bin | grep "gcc" | sort -r > ex1.txt
+
+   87  git status
+   88  ls
+   89  rm temp.sh
+   90  touch hello.py
+   91  rm hello.py
+   92  mkdir Shamil
+   93  rm -r Shamil
+   94  ls
+   95  history > ex2.txt
