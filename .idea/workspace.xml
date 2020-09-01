@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="homeworks" targetName="homeworks" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46d6b6ef-7a53-4940-968e-4bf171c37185" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/homeworks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/C.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/linklibs.rsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/objects.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/objects1.rsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/week3/ex1.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/week3/ex3.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/week3/ex4.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/homeworks.dir/week3/ex5.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/homeworks.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/homeworks.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week3/ex4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week3/ex4.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week3/ex5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week3/ex5.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week3/ex3.c" beforeDir="false" afterPath="$PROJECT_DIR$/week3/ex3.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gGd4BgkYoNh85e8xnRp6213S4U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled/CMakeLists.txt" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunManager">
+    <configuration name="homeworks" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="homeworks" TARGET_NAME="homeworks" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="homeworks" RUN_TARGET_NAME="homeworks">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46d6b6ef-7a53-4940-968e-4bf171c37185" name="Default Changelist" comment="" />
+      <created>1597744669314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597744669314</updated>
+      <workItem from="1597744671296" duration="1293000" />
+      <workItem from="1597847152019" duration="64000" />
+      <workItem from="1597847765228" duration="16000" />
+      <workItem from="1598339645766" duration="106000" />
+      <workItem from="1598953091689" duration="1022000" />
+      <workItem from="1598981063638" duration="4408000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598954026580">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1598954026580" />
+    <state x="535" y="231" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598985240486">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="535" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1598985240486" />
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1598985434003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1598985434003" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1598953341452">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598953341452" />
+    <state width="1515" height="223" key="GridCell.Tab.0.bottom" timestamp="1598985245877">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1598985245877" />
+    <state width="1515" height="223" key="GridCell.Tab.0.center" timestamp="1598985245877">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1598985245877" />
+    <state width="1515" height="223" key="GridCell.Tab.0.left" timestamp="1598985245877">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1598985245877" />
+    <state width="1515" height="223" key="GridCell.Tab.0.right" timestamp="1598985245877">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1598985245877" />
+    <state width="1515" height="276" key="GridCell.Tab.1.bottom" timestamp="1598985244292">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="276" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1598985244292" />
+    <state width="1515" height="276" key="GridCell.Tab.1.center" timestamp="1598985244292">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="276" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1598985244292" />
+    <state width="1515" height="276" key="GridCell.Tab.1.left" timestamp="1598985244292">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="276" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1598985244292" />
+    <state width="1515" height="276" key="GridCell.Tab.1.right" timestamp="1598985244292">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="276" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1598985244292" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598953361215">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.0.1536.864@0.0.1536.864" timestamp="1598953361215" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1598953361215">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.0.1536.864@0.0.1536.864" timestamp="1598953361215" />
+    <state x="270" y="76" key="SettingsEditor" timestamp="1598981398525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1598981398525" />
+    <state x="572" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598981131558">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="572" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1597752332999" />
+    <state x="572" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1598981131558" />
+    <state x="116" y="217" key="refactoring.ChangeSignatureDialog" timestamp="1598982131450">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="116" y="217" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1598982131450" />
+  </component>
+</project>
