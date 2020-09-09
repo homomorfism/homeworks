@@ -34,6 +34,7 @@ char **read_cmd() {
 
         if (symbol == '\n') {
             args[curr_word][curr_letter] = '\n';
+            args[curr_word + 1] = (char*)0;
             break;
         }
 
@@ -50,13 +51,10 @@ int main() {
 
 
     char **args = read_cmd();
-    printf("%s", args[0]);
-    printf("%s", args[1]);
-
-
+    
     int pid = fork();
     if (pid == 0) {
-    	execve(args[0], args, NULL);
+    	execve(args[0], args, (char*)0);
     }
     
 }
