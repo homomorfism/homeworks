@@ -49,12 +49,12 @@ char **read_cmd() {
 
 int main() {
 
-
-    char **args = read_cmd();
-    
-    int pid = fork();
-    if (pid == 0) {
-    	execve(args[0], args, (char*)0);
-    }
-    
+	while(1) {
+		char **args = read_cmd();
+		
+		int pid = fork();
+		if (pid == 0) {
+			execve(args[0], args, (char*)0);
+		}
+	}
 }
