@@ -3,4 +3,4 @@ project(homeworks C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(homeworks week3/ex5.c)
+add_executable(homeworks  week6/ex2.c week6/ex3.c)
