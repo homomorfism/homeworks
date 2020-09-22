@@ -61,10 +61,11 @@ double mean(const double* arr, int n) {
 
 int main() {
     read_data();
-    double CT;
 
     double* TAT = (double *)malloc(sizeof(double ) * N);
     double* WT = (double *)malloc(sizeof(double ) * N);
+    double* CT = (double *) malloc(sizeof(double ) * N);
+
     for (int i = 0; i < N; ++i) {
         TAT[i] = 0;
         WT[i] = 0;
@@ -84,13 +85,13 @@ int main() {
         TAT[i] = WT[i] + burst_time[i];
 
         prev_time_stop = next_time_start + burst_time[i];
-        CT = prev_time_stop;
+        CT[i] = prev_time_stop;
     }
 
     double ATAT = mean(TAT, N);
     double AWT = mean(WT, N);
 
-    printf("CT: %lf\n", CT);
+    print_data(CT, N, "Completion time: ");
     print_data(TAT, N, "Turn around time: ");
     print_data(WT, N, "Waiting time: ");
     printf("Average TAT: %lf\n", ATAT);

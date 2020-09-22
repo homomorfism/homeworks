@@ -1,13 +1,18 @@
 //
 // Created by shoma on 9/22/20.
 //
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
+#include "List.h"
 
-double* arr_time;
-double* burst_time;
+
+double* arr_time,* burst_time,* time_left,*TAT, *WT, *CT;
+struct List list;
+int curr_process;
 int N;
+double quantum;
 
 void swap(double* a, double* b) {
     double temp = *a;
@@ -26,13 +31,16 @@ void print_data(double* arr, int n,  const char* sign) {
 void read_data() {
     //printf("Enter num of processes:");
     scanf("%d", &N);
+    scanf("%lf", &quantum);
 
     arr_time = (double*)malloc(sizeof(double) * N);
     burst_time = (double *)malloc(sizeof(double) * N);
+    time_left = (double *)malloc(sizeof(double) * N);
 
     for (int i = 0; i < N; ++i) {
         scanf("%lf", &arr_time[i]);
         scanf("%lf", &burst_time[i]);
+        time_left[i] = burst_time[i];
     }
 
     for (int i = 0; i < N; ++i) {
@@ -51,70 +59,36 @@ void read_data() {
     printf("\n");
 }
 
-double mean(const double* arr, int n) {
-    double sum = 0;
-    for (int i = 0; i < n; ++i) {
-        sum += arr[i];
-    }
-    return sum / n;
-}
 
 int main() {
     read_data();
 
-    double* TAT = (double *)malloc(sizeof(double ) * N);
-    double* WT = (double *)malloc(sizeof(double ) * N);
-    double* CT = (double *)malloc(sizeof(double ) * N);
+    TAT = (double *)malloc(sizeof(double ) * N);
+    WT = (double *)malloc(sizeof(double ) * N);
+    CT = (double *)malloc(sizeof(double ) * N);
+
+    int* state = (int*) malloc(sizeof(int) * N);
+    // 0 - didn't started execution
+    // 1 - is executing
+    // 2 - have finished
+
     for (int i = 0; i < N; ++i) {
         TAT[i] = 0;
         WT[i] = 0;
+        CT[i] = 0;
+        state[i] = 0;
     }
 
+    int curr_proc = 0, finished_process = 0;
+    double curr_time = 0;
 
-    double prev_time_stop = 0;
-    for (int i = 0; i < N; ++i) {
-        double next_time_start;
-        if (arr_time[i] < prev_time_stop) {
-            next_time_start = prev_time_stop;
-            WT[i] = prev_time_stop - arr_time[i];
-        } else {
-            next_time_start = arr_time[i];
-        }
 
-        TAT[i] = WT[i] + burst_time[i];
+    while (finished_process < N) {
 
-        prev_time_stop = next_time_start + burst_time[i];
-        CT[i] = prev_time_stop;
     }
-
-    double ATAT = mean(TAT, N);
-    double AWT = mean(WT, N);
-
-
-    print_data(CT, N, "Completion time: ");
-    print_data(TAT, N, "Turn around time: ");
-    print_data(WT, N, "Waiting time: ");
-    printf("Average TAT: %lf\n", ATAT);
-    printf("Average waiting time: %lf", AWT);
 
 }
 
 
-/* Enter data:
-6
-1 5
-2 8
-7 10
-7 45
-6 30
-5 40
 
 
-2
-1 10
-20 1 - passed
-
-2
-0 1
-0 1 - passed
-*/
