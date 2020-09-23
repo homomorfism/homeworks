@@ -1,21 +1,27 @@
 //
 // Created by shoma on 9/22/20.
-//
+// Description: implementation of first job first algorithm
+// Input:
+//      num_processes
+//      ...
+//      i-th_process_start i-th_process_end
+
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
-double* arr_time;
-double* burst_time;
+double *arr_time;
+double *burst_time;
 int N;
 
-void swap(double* a, double* b) {
+void swap(double *a, double *b) {
     double temp = *a;
     *a = *b;
     *b = temp;
 }
 
-void print_data(double* arr, int n,  const char* sign) {
+void print_data(double *arr, int n, const char *sign) {
     printf("%s", sign);
     for (int i = 0; i < n; ++i) {
         printf("%lf ", arr[i]);
@@ -27,8 +33,8 @@ void read_data() {
     //printf("Enter num of processes:");
     scanf("%d", &N);
 
-    arr_time = (double*)malloc(sizeof(double) * N);
-    burst_time = (double *)malloc(sizeof(double) * N);
+    arr_time = (double *) malloc(sizeof(double) * N);
+    burst_time = (double *) malloc(sizeof(double) * N);
 
     for (int i = 0; i < N; ++i) {
         scanf("%lf", &arr_time[i]);
@@ -51,7 +57,7 @@ void read_data() {
     printf("\n");
 }
 
-double mean(const double* arr, int n) {
+double mean(const double *arr, int n) {
     double sum = 0;
     for (int i = 0; i < n; ++i) {
         sum += arr[i];
@@ -62,9 +68,9 @@ double mean(const double* arr, int n) {
 int main() {
     read_data();
 
-    double* TAT = (double *)malloc(sizeof(double ) * N);
-    double* WT = (double *)malloc(sizeof(double ) * N);
-    double* CT = (double *)malloc(sizeof(double ) * N);
+    double *TAT = (double *) malloc(sizeof(double) * N);
+    double *WT = (double *) malloc(sizeof(double) * N);
+    double *CT = (double *) malloc(sizeof(double) * N);
     for (int i = 0; i < N; ++i) {
         TAT[i] = 0;
         WT[i] = 0;
