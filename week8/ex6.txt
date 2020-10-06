@@ -1,0 +1,6 @@
+Number of bytes in each page: 8 * 1024 = 2**13 bytes
+    => 13 bits for offset (to access each byte in page)
+
+Virtual memory is 16 bits
+    => the number of bits to choose entry is 16 - 13 = 3 bit for all entries
+    => 2**3 = 8 entries has virtual memory

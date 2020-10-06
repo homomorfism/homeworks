@@ -1,0 +1,12 @@
+Logs from console:
+
+[shamil@shamil week8]$ ./ex2 & top -d 1
+...
+MiB Swap:    512,0 total,     26,4 free,    485,6 used.   3198,7 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3743 shamil    20   0 5122360   4,9g   1120 S  30,7  43,2   0:01.57 ex2
+...
+
+Using the command top we could see that ex2 process is the most consuming process in the system,
+mainly all Swap memory and RAM memory is used by this process.

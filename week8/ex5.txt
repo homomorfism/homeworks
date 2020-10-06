@@ -1,0 +1,5 @@
+
+Physical address is where the variables actually stored, address of physical storage.
+Virtual address is fictive place where variables is stored, used for abstraction
+of process memory. Having virtual address and page table,we could determine the actual
+physical address of variable.

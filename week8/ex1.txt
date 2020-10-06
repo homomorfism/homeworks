@@ -1,0 +1,5 @@
+[shamil@shamil ~]$ free -t -h
+              total        used        free      shared  buff/cache   available
+Mem:           11Gi       2,5Gi       7,3Gi       207Mi       1,5Gi       8,3Gi
+Swap:            0B          0B          0B
+Total:         11Gi       2,5Gi       7,3Gi

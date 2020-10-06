@@ -1,0 +1,15 @@
+Logs from console:
+[shamil@shamil week8]$ ./ex2 & vmstat 1
+[1] 3347
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 3  0      0 6220352  87092 2334908    0    0   311   130  332  641  5  2 93  0  0
+ 3  0  77568 167652  40188 709488    0 34556  1016 34656 5244 8160  3 20 77  0  0
+ 1  0 260352 285680   4444 394424    0 5736  4008  5788 4668 8599  1 23 75  0  0
+ 3  0 407808 198576    740 239264    4 3360  1800  3360 6531 7110  1 22 76  0  0
+ 0  0 523736 8848536   1484 226132    0   64 162496   528 14175 11534  2 34 57  7  0
+ 0  0 518588 8813508   2596 250124    0    0  6768     0 2412 4116  2  2 97  0  0
+^C
+
+When executing the program the part of memory allocated by the process is swapping to disk (so increasing)
+and only lower part of memory is going back to the RAM.
