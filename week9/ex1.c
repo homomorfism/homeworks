@@ -8,17 +8,16 @@
 #include <stdbool.h>
 #include <limits.h>
 
+// Change num page frames here
 #define N 10
 
-// Частота обн. счетчитов в miss/hit
-#define REF_COUNER 10
+// Кол-во записей в файле, в выложенном файле 1000
+#define SIZE_INPUT 40
 
-// Кол-во записей в файле
-#define SIZE_INPUT 1000
-
+unsigned int one = 1;
 
 struct Page {
-    int counter;
+    unsigned int counter;
     int status; // zero if empty, n if buzy with i-th page
 };
 
@@ -30,7 +29,7 @@ int id_free_place_for_process(struct Page* PageTable, int id) {
     return -1;
 }
 
-int have_process_in_table(struct Page* PageTable, int id) {
+int id_process_in_table(struct Page* PageTable, int id) {
     for (int i = 0; i < N; ++i) {
         if (PageTable[i].status == id) return i;
     }
@@ -45,7 +44,7 @@ void auto_decrementing(struct Page* PageTable) {
 }
 
 int find_smallest_age(struct Page* PageTable) {
-    int min_age = INT_MAX;
+    unsigned int min_age = INT_MAX;
     int id = 0;
 
     for (int i = 0; i < N; ++i) {
@@ -64,7 +63,7 @@ int find_smallest_age(struct Page* PageTable) {
 void page_frames_info(struct Page* PageTable) {
     printf("\nIndex, status, age\n");
     for (int i = 0; i < N; ++i) {
-        printf("%d %d %d\n", i, PageTable[i].status, PageTable[i].counter);
+        printf("%d %d %ud\n", i, PageTable[i].status, PageTable[i].counter);
     }
     printf("\n");
 }
@@ -76,7 +75,8 @@ int main() {
     assert(input != NULL);
     struct Page* PageTable = (struct Page*)malloc(sizeof(struct Page) * N);
     for (int i = 0; i < N; ++i) {
-        PageTable[i].counter = PageTable[i].status = 0;
+        PageTable[i].counter = 0;
+        PageTable[i].status = 0;
     }
 
     int num_hits = 0;
@@ -89,10 +89,10 @@ int main() {
         printf("%d ", n);
         auto_decrementing(PageTable);
 
-        if (have_process_in_table(PageTable, n) != -1) {
-            int place = have_process_in_table(PageTable, n);
+        if (id_process_in_table(PageTable, n) != -1) {
+            int place = id_process_in_table(PageTable, n);
             num_hits += 1;
-            PageTable[place].counter += 1<<30;
+            PageTable[place].counter += one<<31;
             printf(" is in the table\n");
         } else {
             num_misses += 1;
@@ -102,19 +102,21 @@ int main() {
             if (free_place != -1) {
                 printf(" but now at %d free place\n", free_place);
                 PageTable[free_place].status = n;
-                PageTable[free_place].counter += 1<<30;
+                PageTable[free_place].counter += one<<31;
 
             } else {
                 int place = find_smallest_age(PageTable);
                 printf(" but now at %d free(now swapped) place\n", place);
 
                 PageTable[place].status = n;
-                PageTable[place].counter += 1<<30;
+                PageTable[place].counter += one<<31;
             }
         }
-        page_frames_info(PageTable);
+        //page_frames_info(PageTable);
 
     }
+
+    printf("Num hit: %d, num miss: %d\n", num_hits, num_misses);
 
     fclose(input);
     return 0;
