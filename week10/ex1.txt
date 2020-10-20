@@ -1,0 +1,6 @@
+[shamil@shamil week10]$ ls -i _ex1.c
+5532713 _ex1.c
+[shamil@shamil week10]$ ls -i _ex1_1.c
+5532713 _ex1_1.c
+[shamil@shamil week10]$ ls -i _ex1_2.c
+5532713 _ex1_2.c

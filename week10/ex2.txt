@@ -1,0 +1,10 @@
+[shamil@shamil week10]$ find .. -inum 5538487
+../week10/_ex2.txt
+[shamil@shamil week10]$ ls -i _ex2.c
+5538529 _ex2.c
+[shamil@shamil week10]$ find /home -xdev -inum 5538529
+/home/shamil/CLionProjects/homeworks/week10/_ex2.c
+/home/shamil/CLionProjects/homeworks/week1/file.txt
+[shamil@shamil week10]$ find /home -xdev -inum 5538529 | xargs rm
+[shamil@shamil week10]$ find /home -xdev -inum 5538529
+[shamil@shamil week10]$
