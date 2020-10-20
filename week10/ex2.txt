@@ -8,3 +8,4 @@
 [shamil@shamil week10]$ find /home -xdev -inum 5538529 | xargs rm
 [shamil@shamil week10]$ find /home -xdev -inum 5538529
 [shamil@shamil week10]$
+// Ничего не найдено

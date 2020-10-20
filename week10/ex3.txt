@@ -1,0 +1,19 @@
+[shamil@shamil week10]$ chmod u=rwx _ex3.txt
+[shamil@shamil week10]$ chmod o=rwx _ex3.txt
+[shamil@shamil week10]$ ls -l
+total 8
+-rw-r--r-- 1 shamil shamil 164 окт 20 17:25 ex1.txt
+-rw-r--r-- 1 shamil shamil 455 окт 20 19:20 ex2.txt
+-rwxr--rwx 1 shamil shamil   0 окт 20 17:46 _ex3.txt
+
+[shamil@shamil week10]$ chmod g=u _ex3.txt
+[shamil@shamil week10]$ ls -l
+total 12
+-rw-r--r-- 1 shamil shamil 164 окт 20 17:25 ex1.txt
+-rw-r--r-- 1 shamil shamil 455 окт 20 19:20 ex2.txt
+-rwxrwxrwx 1 shamil shamil   0 окт 20 17:46 _ex3.txt
+
+
+669 <=> -rw-rw----
+775 <=> -rwxrwxr-x
+777 <=> -rwxrwxrwx
