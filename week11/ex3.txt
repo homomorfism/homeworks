@@ -1,0 +1,7 @@
+1-st program output:
+Hello
+Hello
+
+2-nd program output:
+Hello
+
