@@ -14,7 +14,7 @@ int main() {
     int des = open("ex1.txt", O_RDWR);
     assert(des >= 0);
     stat("ex1.txt", &buff);
-    printf("Size of file: %d", buff.st_size);
+    printf("Size of file: %ld", buff.st_size);
 
     char* line = "This is a good day";
     ftruncate(des, strlen(line));

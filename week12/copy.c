@@ -35,11 +35,11 @@ main(int argc, char *argv[])
     }
 
     /* Open input and output files */
-    inputFd = open(argv[1], O_RDONLY);
+    inputFd = open(argv[1], O_RDONLY | O_SYNC);
     if (inputFd == -1)
         printf("opening file %s", argv[1]);
 
-    openFlags = O_CREAT | O_WRONLY | O_TRUNC;
+    openFlags = O_CREAT | O_WRONLY | O_TRUNC | O_SYNC;
 #ifdef SYNC
     openFlags |= O_SYNC;
 #endif

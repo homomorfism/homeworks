@@ -1,0 +1,31 @@
+buf=20
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m0,250s
+
+buf=40
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m0,149s
+
+
+buf=80
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m0,092s
+
+buf=160
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m0,064s
+
+--> The time slows twice as first, but as a buffer increases, the time not geometrically slows
+
+
+After adding O_SYNC
+buf=1000
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m3,919s
+
+buf=2000
+[shamil@shamil week12]$ time ./copy temp.txt temp2.txt
+real    0m1,997s
+
+--> The making synchronous syscall opening the file, the time increases many time (~in 300 times).
+O_SYNC disables caching, that's why speed decreases.
