@@ -1,0 +1,8 @@
+Recovery:
+ + if number of processes & resources is much, it is faster that e.x. Banker Algo
+ + recovery makes only ones (faster), while prevention (dynamic checking for deadlock) is made each time acquiring the resource
+Prevention:
+ + if number of processes & resources is much, it is faster that e.x. Banker Algo
+ + mathematically proven, 100% success (e.x. we could kill some important process  during recovery and lose data)
+Avoidance:
+ + mathematically proven, 100% success (e.x. we could kill some important process  during recovery and lose data)
